@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Piazzolla:wght@200;300;400&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Piazzolla', serif;
+}
+:root{
+    --main-bg : #1e272e;
+    --main-color: #0097e6;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+.navbar{
+    padding: 1.8rem;
+}
+.navbar li{
+    margin-left: 2rem;
+}
+.navbar a{
+    font-size: 1.8rem;
+}
+.navbar a:hover{
+    color: var(--main-color) !important;
+}
+
+
+.fa-snowflake{
+    transition: all linear;
+    animation: rotate 2s linear infinite ;   
+}
+@keyframes rotate {
+    from{
+        transform: rotate(0deg);
+    }to{
+        transform: rotate(360deg);
+    }
+}
+
+.main-content{
+    height: 70rem;
+    display: flex;
+    align-items: center;
+}
+.left-main , .right-main{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+}
+.left-main P{
+    font-size: 2.3rem;
+    text-transform: capitalize;
+}
+.about-me-img{
+    height: 42rem !important;
+    filter: drop-shadow(0 0.5rem 2rem rgba(0, 20, 29, 0.5));
+}
+.left-main h1{
+    font-size: 3.5rem;
+    margin: 1rem 0 4rem 0;
+    text-transform: capitalize;
+}
+.left-main button{
+    border: none;
+    padding: .8rem 1.8rem;
+    font-size: 1.4rem;
+    border-radius: 2rem;
+    text-transform: uppercase;
+    box-shadow: 0 8px 6px -6px #000;
+    outline: none;
+}
+.left-main button:hover{
+    box-shadow: 0 8px 6px -6px var(--main-color);
+}
+.right-main img{
+    height: 30rem;
+}
+footer{
+    width: 100%;
+    background-color: var(--main-bg);
+    margin-top: auto;
+}
+footer p{
+    margin: 0;
+    color: white;
+    text-align: center;
+    line-height: 8rem;
+    font-size: 1.6rem;
+    
+}
+
+.hero-seach {
+    padding: 20px 0 20px 20px;
+  }
+  .searchBtn {
+    color: #fff;
+    background-color: #1dbf73;
+    border-color: #1dbf73;
+    font-weight: bold;
+  }
+  .searchBtn:hover {
+    background-color: #19a463;
+    color: #fff;
+  }
+  .searchBtn:focus,
+  .popularBtn:focus {
+    box-shadow: none;
+  }
+  .tempature-div{
+      width: 40%;
+      
+      padding-top: 6rem;
+      font-size: 2rem; }
+  ::placeholder{
+      font-size: 2rem;
+  }
+  input{
+      font-size: 2rem !important;
+  }
+  .top-leyar{
+      margin-top: 25px;
+  }
+  .tempInformation{
+      width: 100%;
+      text-align: center;
+  }
+  .main_leyar{
+      background: var(--main-bg);
+      color: var(--main-color);
+      
+      border-radius: 10px;
+      padding: 12px 8px;
+  }
+  #city_name{
+      margin: 2rem ;
+      font-size: 3rem;
+      color: white;
+  }
+  .temp-leyar{
+      margin: 2rem;
+      font-size: 6rem;
+      font-weight: bold;
+      color: white;
+  }
+  .fa{
+      color: var(--main-color);
+  }
+@media (max-width:992px){
+    .tempature-div{
+        width: 90%;
+    }
+}
+@media (max-width:768px){
+    .about-h1{
+        font-size: 2rem !important;
+        margin: 2rem 0 !important;
+    }
+    .aboutBtn{
+        margin-bottom: 20px;
+    }
+    .right-main img{
+        height: 25rem !important;
+        margin-top: -3rem;
+        margin-bottom: 3rem;
+    }
+    
+    
+}
